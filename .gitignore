@@ -1,0 +1,24 @@
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de compilación
+dist/
+build/
+
+# Archivos de entorno
+.env
+
+# Archivos específicos del IDE
+.vscode/
+.idea/
+
+# Archivos temporales
+*.tmp
+*.bak
