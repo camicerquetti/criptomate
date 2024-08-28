@@ -4,7 +4,7 @@ const path = require('path');
 const db = require('./config/db'); 
 const userRoutes = require('./routes/userRoutes');
 const app = express();
-const port = 3001;
+const port = process.env.PORT;
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
