@@ -4,7 +4,7 @@ const path = require('path');
 const db = require('./config/db'); 
 const userRoutes = require('./routes/userRoutes');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3001; // Usa el puerto del entorno o un puerto por defecto
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
@@ -12,6 +12,7 @@ require('dotenv').config();
 app.use(cors({
   origin: 'http://localhost:3000', // Permite solicitudes desde este origen
 }));
+
 // Configura el middleware para manejar JSON
 app.use(express.json()); // Para manejar solicitudes JSON
 
@@ -19,13 +20,7 @@ app.use(express.json()); // Para manejar solicitudes JSON
 app.use('/api', userRoutes); // '/api' es el prefijo para tus rutas
 
 // Define el directorio de archivos estáticos
-const staticPath = path.join(__dirname, '../fornt-end/build');
-
-app.get('/api/endpoint', (req, res) => {
-  res.setHeader('Content-Type', 'application/json');
-
-});
-
+const staticPath = path.join(__dirname, '../front-end/build');
 
 // Verifica la ruta de los archivos estáticos
 console.log('Serving static files from:', staticPath);
