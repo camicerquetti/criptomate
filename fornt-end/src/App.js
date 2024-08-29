@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Header from './componentes/header'; 
 import Main from './componentes/main'; 
 import Footer from './componentes/footer'; 
@@ -14,6 +15,7 @@ import Dashboard from './componentes/Dashboard';
 import NotFound from './componentes/Notfound';
 import UserList from './componentes/UserList';
 import Enviodemonedas from './componentes/enviodemonedas';
+
 function App() {
   const [data, setData] = useState(null); // Estado para almacenar datos del backend
   const [loading, setLoading] = useState(true); // Estado para gestionar la carga de datos
@@ -50,6 +52,20 @@ function App() {
 
   return (
     <Router>
+  <Helmet>
+  <title>CriptoMate</title>
+  <meta name="description" content="Descripción global de CriptoMate" />
+  <meta name="keywords" content="react, criptomonedas" />
+  <meta property="og:title" content="CriptoMate" />
+  <meta property="og:description" content="Descripción global de CriptoMate" />
+  <meta property="og:image" content="/Designer2.png" />
+  <meta property="og:url" content="https://www.tusitio.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CriptoMate" />
+  <meta name="twitter:description" content="Descripción global de CriptoMate" />
+  <meta name="twitter:image" content="/Designer2.png" />
+</Helmet>
       <div className="App" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Header />
         <main style={{ flex: 1 }}>
@@ -63,9 +79,9 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/billetera" element={<Billetera />} />
             <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/enviodemonedas" element={<Enviodemonedas />} />
-          <Route path="/UserList" element={<UserList />} />
-          <Route path="/Notfound" element={<NotFound />} /> 
+            <Route path="/enviodemonedas" element={<Enviodemonedas />} />
+            <Route path="/UserList" element={<UserList />} />
+            <Route path="/Notfound" element={<NotFound />} /> 
           </Routes>
           <div>
             <h1>Data from Backend:</h1>
