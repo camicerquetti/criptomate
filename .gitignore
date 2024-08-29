@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de compilación
+dist/
+build/
+
+# Archivos de entorno
+.env
+
+# Archivos específicos del IDE
+.vscode/
+.idea/
+
+# Archivos temporales
+*.tmp
+*.bak
+=======
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -21,3 +47,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+>>>>>>> a9d22878473f89ab1e31d98a75db054f02048435
