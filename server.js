@@ -30,7 +30,11 @@ app.use(express.static(staticPath));
 
 // Ruta para manejar el acceso a la SPA (Single Page Application)
 app.get('*', (req, res) => {
+  // Construye la ruta al archivo index.html
   const filePath = path.join(staticPath, 'index.html');
+  console.log('Requesting file:', filePath); // Log para depuración
+  
+  // Envía el archivo index.html si existe
   res.sendFile(filePath, (err) => {
     if (err) {
       console.error('Error sending file:', err);
