@@ -64,6 +64,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Licencia
+
+Este proyecto está protegido por derechos de autor. No se permite la distribución, modificación o uso comercial del código sin el consentimiento previo y expreso del autor. Si deseas usar este código en tu proyecto, por favor contacta al autor para obtener permiso explícito, al igual que para el uso de la idea subyacente.
+
+Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ### `npm run build` fails to minify
 
