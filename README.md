@@ -1,3 +1,47 @@
+# CriptoMate - Frontend
+
+## Introducción
+
+CriptoMate es una aplicación desarrollada por [Tu Nombre o Equipo] para docentes que buscan incentivar a sus estudiantes de forma innovadora y motivadora. A través de monedas virtuales, los estudiantes pueden recibir recompensas por tareas cumplidas, buen comportamiento y otros logros. El frontend de CriptoMate está construido en React para ofrecer una experiencia moderna, rápida y responsiva.
+
+## ¿Quiénes somos?
+
+Somos un equipo dedicado a crear herramientas educativas que faciliten la interacción entre docentes y estudiantes, promoviendo un ambiente de aprendizaje positivo y divertido mediante tecnología accesible y fácil de usar.
+
+## Cómo registrarte
+
+1. Abre la aplicación en tu navegador.
+2. Haz clic en "Registrarse" si eres un nuevo usuario.
+3. Completa el formulario con tu nombre, correo electrónico y contraseña.
+4. Confirma tu registro a través del correo electrónico (si está habilitado).
+5. Inicia sesión con tus credenciales.
+
+Los docentes podrán transferir monedas virtuales a los estudiantes y gestionar las recompensas, mientras que los estudiantes podrán consultar su saldo y canjear beneficios.
+
+## Tecnologías utilizadas
+
+- React.js
+- React Router para la navegación
+- Axios para la comunicación con el backend
+- Context API o Redux para manejo del estado global
+- CSS / SASS / Styled Components para los estilos
+
+## Funcionalidades principales
+
+- Registro e inicio de sesión de usuarios.
+- Panel para docentes con gestión de estudiantes y transferencias de monedas.
+- Vista para estudiantes con saldo y canje de recompensas.
+- Historial de transacciones y movimientos.
+- Interfaz amigable y responsiva para dispositivos móviles y escritorio.
+
+## Instalación
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone <URL_DEL_REPOSITORIO_FRONTEND>
+   cd criptomate-frontend
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
